@@ -1,0 +1,358 @@
+/*
+Purpose: This file contains a normalized, AI-friendly list of Shopify products and their variants scraped from a store.
+It is designed to make it easy for an AI agent to search, filter, and select products and variants for purchase,
+without needing to scrape the site again.
+
+Schema Template:
+{
+  'products': [
+    {
+      'product_id': str, // Unique Shopify product ID
+      'name': str, // Product name
+      'description': str, // Product description
+      'brand': str, // Brand or vendor
+      'category': str, // Product category/type
+      'tags': [str], // List of tags/keywords
+      'url': str, // Product page URL
+      'image_urls': [str], // List of product image URLs
+      'price_cents': int, // Default price in cents
+      'availability': str, // Product-level availability
+      'variants': [
+        {
+          'variant_id': str, // Unique variant ID
+          'name': str, // Variant name (e.g., 'L / Black')
+          'sku': str, // SKU
+          'price_cents': int, // Price in cents
+          'availability': str, // Variant-level availability
+          'image_url': str, // Variant image URL
+          'options': {str: str} // Option name-value pairs (e.g., {'size': 'L', 'color': 'Black'})
+        }
+      ]
+    }
+  ]
+}
+
+Field Explanations:
+- product_id: Unique Shopify product ID (string or number as string)
+- name: Product name
+- description: Full product description
+- brand: Brand or vendor name
+- category: Product category/type (if available)
+- tags: List of tags/keywords (if available)
+- url: Product page URL
+- image_urls: List of product image URLs
+- price_cents: Default product price in cents (integer)
+- availability: Product-level availability (e.g., 'InStock', 'OutOfStock')
+- variants: List of variant objects, each with:
+    - variant_id: Unique variant ID
+    - name: Variant name (e.g., 'L / Black')
+    - sku: Stock Keeping Unit
+    - price_cents: Price in cents (integer)
+    - availability: Variant-level availability
+    - image_url: Variant image URL
+    - options: Dictionary of option name-value pairs (e.g., {'size': 'L', 'color': 'Black'})
+*/
+{
+  "products": [
+    {
+      "product_id": "8799945785571",
+      "name": "Down to Earth \"Infinity\"",
+      "description": "Timeless, limitless, and effortlessly cool—the Infinity Tee by Down To Earth is made for those who believe in endless possibilities. Crafted from 100% premium cotton, this tee offers unmatched comfort and breathability, perfect for everyday wear. Whether you're chasing dreams or embracing the moment, Infinity represent",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/down-to-earth-infinity",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/1954985212343028351_2048.jpg?v=1742430744"
+      ],
+      "price_cents": 4000,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "product_id": "8799945621731",
+      "name": "Down to Earth \"Splash Down\"",
+      "description": "  Introducing the \"Splash Down\" T-shirt from Down to Earth – a perfect blend of comfort and style. Crafted from 100% premium cotton, this shirt offers a soft, breathable feel that keeps you cool and comfortable all day long. The vibrant \"Splash Down\" design captures the essence of adventure and freedom, making it the p",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/down-to-earth-splash-down",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/14911380736777639341_2048.jpg?v=1742430682"
+      ],
+      "price_cents": 4000,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "product_id": "8799946572003",
+      "name": "Down to Earth \"Open Your Mind\" Shorts",
+      "description": "Introducing the \"Open Your Mind\" shorts by Down to Earth – where comfort meets creativity. Crafted from 100% premium cotton, these shorts are designed for those who embrace both freedom and style. The relaxed fit and breathable fabric make them perfect for lounging or adventure, while the bold, thought-provoking design",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/down-to-earth-open-your-mind-shorts",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/abb5614e7cf14700b75fcb1036bcff21.webp?v=1742431109"
+      ],
+      "price_cents": 3500,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "product_id": "8799943917795",
+      "name": "Down to Earth \"Open Your Mind\" Hoodies",
+      "description": "Unleash your true self with the \"Open Your Mind\" hoodie from Down to Earth. Made from 100% cotton, this acid-washed hoodie combines laid-back comfort with a bold, unique style. The vintage-inspired wash gives it a distinct, worn-in look that’s perfect for those who embrace individuality. With its soft, breathable fabri",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/down-to-earth-open-your-mind-sweatshirt",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/a5cb3f88468e45eaa16a7713fac963b6.webp?v=1742429544"
+      ],
+      "price_cents": 5500,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "product_id": "8799945818339",
+      "name": "Down to Earth \"Smell the Roses\"",
+      "description": "This 100% US cotton made t-shirt helps maintain the DTE, earthly design pattern.",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/down-to-earth-smell-the-roses",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/13973628925249190770_2048.jpg?v=1742430759"
+      ],
+      "price_cents": 4000,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "product_id": "down-to-earth-inter-dimensional#product",
+      "name": "Down to Earth \"Inter-dimensional\"",
+      "description": "The \"Interdimensional Tee\" is not just a shirt; the Interdimensional Tee is a visual journey into the mysteries of alternate realities. Crafted from high-quality, breathable organic cotton, this tee ensures comfort without compromising on style. Its unique, otherworldly design is perfect for those who dare to embrace t",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/down-to-earth-inter-dimensional",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/c965b3_8aad7985f7e340ba9713c771ad35733d_mv2.webp?v=1739412840"
+      ],
+      "price_cents": 3500,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "product_id": "8799944802531",
+      "name": "Down to Earth \"Earthwear\" Sweatshirt",
+      "description": " Embrace the essence of nature with the \"Earthwear\" sweatshirt from Down to Earth. Crafted from 100% premium cotton, this sweatshirt offers a soft, comfortable fit that feels as good as it looks. With its minimalist design and subtle earth-inspired tones, \"Earthwear\" is a tribute to the planet we call home. Perfect fo",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/down-to-earth-earthwear-sweatshirt",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/1976866922816521113_2048.jpg?v=1742430233"
+      ],
+      "price_cents": 4500,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "product_id": "8783867904227",
+      "name": "Down to Earth \"DOWN\"",
+      "description": "Stay grounded in comfort and style with the DOWN longsleeve. Crafted from 100% premium cotton, this essential piece delivers a soft, breathable feel for everyday wear. Designed with a relaxed fit, it’s perfect for layering or wearing solo. Whether you're keeping it low-key or making a statement, this longsleeve keeps y",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/down-to-earth-down",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/BAckdown_9afee12a-42a5-43ab-8143-959b6fd58a07.webp?v=1740585988"
+      ],
+      "price_cents": 4000,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "product_id": "8807482163427",
+      "name": "Down to Earth \"Wavelength V2\"",
+      "description": "The Wavelength V2 T-shirt is a refreshed take on the original Wavelength, combining classic comfort with a modern edge. Crafted from 100% premium cotton, this tee delivers a soft, breathable feel for everyday wear. Now available in three distinct color variations, Wavelength V2 lets you choose the perfect shade to match.",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/copy-of-down-to-earth-splash-down",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/16881224666113734340_2048.jpg?v=1743127822"
+      ],
+      "price_cents": 3500,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "product_id": "8831901303011",
+      "name": "Down to Earth \"Have an Earth Day\"",
+      "description": "This 100% US cotton made t-shirt helps maintain the DTE, earthly design pattern. This shirt with a heat pressed design was made for Earth Day.",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/down-to-earth-have-an-earth-day",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/Yourparagraphtext_1.png?v=1745340719"
+      ],
+      "price_cents": 2500,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "product_id": "down-to-earth-wavelength#product",
+      "name": "Down to Earth \"Wavelength\"",
+      "description": "The \"Wavelength Tee\" is a striking and stylish addition to your wardrobe. Made from premium, soft cotton fabric, the Wavelength Tee offers not only a fashionable statement but also supreme comfort for everyday wear. Its versatile design makes it suitable for various occasions, from casual outings to relaxed evenings wi",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/down-to-earth-wavelength",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/c965b3_5744822e29984ad09b2d996b387985b3_mv2.webp?v=1739412406"
+      ],
+      "price_cents": 3300,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    },
+    {
+      "product_id": "8772985848035",
+      "name": "Down to Earth \"Going Global\"",
+      "description": "  S M L XL 2XL 3XL 4XL Width, in 18.25 20.25 22.00 24.00 26.00 27.75 29.75 Length, in 26.62 28.00 29.37 30.75 31.62 32.50 33.50 Sleeve length from center back, in 16.25 17.75 19.00 20.50 21.75 23.25 24.63 Size tolerance, in 1.50 1.50 1.50 1.50 1.50 1.50 1.50 This tee is made with 100% US cotton, continuing the DTE eart",
+      "brand": "Down to Earth Project LLC",
+      "category": "",
+      "tags": [],
+      "url": "https://downtoearthprojllc.com/products/down-to-earth-going-global-1",
+      "image_urls": [
+        "http://downtoearthprojllc.com/cdn/shop/files/17896138017394974851_2048.jpg?v=1739403165"
+      ],
+      "price_cents": 3495,
+      "availability": "https://schema.org/InStock",
+      "variants": [
+        {
+          "variant_id": "None",
+          "name": "",
+          "sku": "",
+          "price_cents": 0,
+          "availability": "https://schema.org/InStock",
+          "image_url": "",
+          "options": {}
+        }
+      ]
+    }
+  ]
+}
