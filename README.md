@@ -11,14 +11,14 @@ This tool scrapes Shopify product data from a given store's sitemap.xml and sub-
 ## Usage
 
 ```bash
-python shopify_scraper.py <shopify_store_url> [--threads N]
+python ask.py <shopify_store_url> [--threads N]
 ```
 - `<shopify_store_url>`: The base URL of the Shopify store (e.g., `https://examplestore.com/`)
 - `--threads N`: (Optional) Number of parallel threads to use for scraping (default: 8)
 
 Example:
 ```bash
-python shopify_scraper.py https://downtoearthprojllc.com/ --threads 12
+python ask.py https://downtoearthprojllc.com/ --threads 12
 ```
 
 ## Output
@@ -61,7 +61,7 @@ python shopify_scraper.py https://downtoearthprojllc.com/ --threads 12
 
 3. **Verify installation**:
    ```bash
-   python shopify_scraper.py --help
+   python ask.py --help
    ```
 
 ## Output Format

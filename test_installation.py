@@ -47,7 +47,7 @@ def test_imports():
 def test_scraper_import():
     """Test that the ShopifyScraper class can be imported."""
     try:
-        from shopify_scraper import ShopifyScraper
+        from ask import ShopifyScraper
         print("✓ ShopifyScraper imported successfully")
         return True
     except ImportError as e:
@@ -117,9 +117,9 @@ def main():
     if all_tests_passed:
         print("✓ All tests passed! The scraper is ready to use.")
         print("\nTo use the scraper, run:")
-        print("python shopify_scraper.py <base_url>")
+        print("python ask.py <base_url>")
         print("\nExample:")
-        print("python shopify_scraper.py https://example-shop.com")
+        print("python ask.py https://example-shop.com")
     else:
         print("✗ Some tests failed. Please check the installation.")
         print("\nTo install dependencies, run:")
